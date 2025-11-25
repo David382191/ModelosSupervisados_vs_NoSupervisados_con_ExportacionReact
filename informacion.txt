@@ -1,0 +1,24 @@
+Oye. Pilas aquí te dejo algunas cosas a tener en cuenta.
+
+- Esto de aquí es para instalar las libreias.
+Recuerda,  no  nos funciona el "pip"
+
+python -m pip install streamlit
+python -m pip install numpy
+python -m pip install pandas
+python -m pip install sqlite3
+python -m pip install plotly
+python -m pip install matplotlib
+
+streamlit>=1.20
+scikit-learn>=1.2
+pandas
+numpy
+matplotlib
+
+
+
+
+- Esto de acá es para ejecutar.
+python -m streamlit run interfaz.py
+
