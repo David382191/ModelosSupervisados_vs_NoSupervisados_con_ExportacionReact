@@ -7,6 +7,7 @@ Streamlit app para la tarea:
 - Guarda modelos .pkl y permite descargar.
 - Dataset por defecto: Iris/Wine/Breast Cancer (se binarizan para BernoulliNB).
 """
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -56,7 +57,7 @@ test_size_pct = int(st.sidebar.slider("Test size (%) (supervisado)", 10, 50, 20)
 n_clusters = int(st.sidebar.slider("Número de clusters (no supervisado)", 2, 8, 3))
 batch_size = int(st.sidebar.number_input("MiniBatch size (no supervisado)", value=32, min_value=8, max_value=1024, step=8))
 
-# ---------- Load dataset ----------
+# ---------- Cargar el dataset ----------
 def load_dataset(name):
     if name == "Iris":
         d = datasets.load_iris(as_frame=True)
@@ -77,7 +78,7 @@ st.markdown("App lista para entrenar, validar, exportar JSON y descargar modelos
 
 
 ################################
-# show data preview
+# Mostrar data preview
 with st.expander("Ver dataset (primeras filas)"):
     df_preview = X_raw.copy()
     df_preview["target"] = y_raw
@@ -235,7 +236,7 @@ else:
         ax.set_ylabel("PC2")
         st.pyplot(fig)
 
-        # download model
+        # Modelo de Descarga.
         model_bytes = save_pickle(kmeans)
         st.download_button("Descargar modelo (.pkl)", data=model_bytes, file_name=os.path.basename(model_filename), mime="application/octet-stream")
 
