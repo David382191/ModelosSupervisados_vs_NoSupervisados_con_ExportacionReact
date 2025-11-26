@@ -243,3 +243,5 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.write("Archivos guardados en la carpeta `./artifacts`.")
 st.write("Hecho para la tarea: BernoulliNB (supervisado) + MiniBatchKMeans (no supervisado).")
+
+###Por Alfonso Espinoza

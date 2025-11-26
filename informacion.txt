@@ -17,8 +17,6 @@ numpy
 matplotlib
 
 
-
-
 - Esto de acá es para ejecutar.
 python -m streamlit run interfaz.py
 
