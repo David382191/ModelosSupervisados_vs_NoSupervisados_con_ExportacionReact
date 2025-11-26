@@ -231,7 +231,8 @@ if mode.startswith("Supervisado"):
         st.write("Modelo guardado en:", model_filename)
 
 
-
+###################################################################################################################
+###################################################################################################################
 # ---------- No Supervisado ---------- # El ultimos que nos falta.
 # Entra aquí si el usuario eligió MiniBatchKMeans.
 else:
