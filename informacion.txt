@@ -20,3 +20,5 @@ matplotlib
 - Esto de acá es para ejecutar. No te olvides 
 de esto por favor.
 python -m streamlit run interfaz.py
+python -m pip install matplotlib
+
